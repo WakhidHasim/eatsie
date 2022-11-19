@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/background">
 
     <TextView
@@ -26,5 +25,70 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:contentDescription="@string/icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvHeadingLogin">
+
+        <EditText
+            android:id="@+id/etInputUsernameLogin"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:hint="@string/username"
+            android:background="@drawable/input"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="68dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/etInputPasswordLogin"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:hint="@string/password"
+            android:background="@drawable/input"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:inputType="textPassword"
+            />
+        
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/black"
+            android:gravity="right"
+            android:paddingRight="33dp"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:text="@string/login"
+            android:background="@drawable/button"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"/>
+
+    </LinearLayout>
+
+
 
 </RelativeLayout>
