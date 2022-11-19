@@ -45,7 +45,8 @@
             android:fontFamily="@font/poppinsbold"
             android:textSize="20sp"
             android:paddingStart="20dp"
-            android:inputType="text" />
+            android:inputType="text"
+            android:elevation="10dp"/>
 
         <EditText
             android:id="@+id/etInputPasswordLogin"
@@ -59,7 +60,8 @@
             android:fontFamily="@font/poppinsbold"
             android:textSize="20sp"
             android:paddingStart="20dp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:elevation="10dp"/>
         
         <TextView
             android:id="@+id/tvForgotPassword"
@@ -71,7 +73,7 @@
             android:fontFamily="@font/poppinsbold"
             android:textColor="@color/black"
             android:gravity="right"
-            android:paddingRight="33dp" />
+            android:paddingEnd="33dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
