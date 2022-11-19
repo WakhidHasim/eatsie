@@ -15,7 +15,7 @@
         android:fontFamily="@font/poppinsbold"
         android:textSize="20sp"
         android:gravity="center"
-        android:paddingTop="85dp"/>
+        android:paddingTop="85dp" />
 
     <ImageView
         android:id="@+id/iconHeadingLogin"
@@ -27,6 +27,7 @@
         android:contentDescription="@string/icon" />
 
     <LinearLayout
+        android:id="@+id/llFormInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -44,8 +45,7 @@
             android:fontFamily="@font/poppinsbold"
             android:textSize="20sp"
             android:paddingStart="20dp"
-            android:inputType="text"
-            />
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/etInputPasswordLogin"
@@ -59,8 +59,7 @@
             android:fontFamily="@font/poppinsbold"
             android:textSize="20sp"
             android:paddingStart="20dp"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
         
         <TextView
             android:id="@+id/tvForgotPassword"
@@ -72,23 +71,70 @@
             android:fontFamily="@font/poppinsbold"
             android:textColor="@color/black"
             android:gravity="right"
-            android:paddingRight="33dp"
-            />
+            android:paddingRight="33dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:layout_width="337dp"
             android:layout_height="57dp"
             android:text="@string/login"
-            android:background="@drawable/button"
             android:textSize="20sp"
             android:paddingTop="10dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/poppinsbold"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="13dp"/>
+            android:layout_marginTop="13dp"
+            android:background="@drawable/button" />
+
+        <TextView
+            android:id="@+id/tvDontHaveAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dont_have_account"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
 
     </LinearLayout>
 
+    <RelativeLayout
+        android:id="@+id/rlIconLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/llFormInput" >
 
+        <ImageView
+            android:id="@+id/ivIconFacebookLogin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/facebook"
+            android:contentDescription="@string/facebook"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginBottom="150dp"/>
+
+        <ImageView
+            android:id="@+id/ivIconGoogleLogin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/google"
+            android:contentDescription="@string/google"
+            android:layout_marginStart="175dp"
+            android:layout_marginBottom="150dp"/>
+
+        <ImageView
+            android:id="@+id/ivIconTwitterLogin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/twitter"
+            android:contentDescription="@string/twitter"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="150dp"/>
+    </RelativeLayout>
 
 </RelativeLayout>
