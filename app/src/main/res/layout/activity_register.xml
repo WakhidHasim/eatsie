@@ -7,11 +7,11 @@
     android:background="@color/background">
 
     <TextView
-        android:id="@+id/tvHeadingLogin"
+        android:id="@+id/tvHeadingRegister"
         android:layout_width="match_parent"
         android:layout_height="133dp"
         android:background="@color/orange"
-        android:text="@string/sign_in"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:fontFamily="@font/poppins_bold"
         android:textSize="20sp"
@@ -28,92 +28,112 @@
         android:contentDescription="@string/icon" />
 
     <LinearLayout
-        android:id="@+id/llFormInputLogin"
+        android:id="@+id/llFormInputRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/tvHeadingLogin" >
+        android:layout_below="@id/tvHeadingRegister">
 
         <EditText
-            android:id="@+id/etInputUsernameLogin"
+            android:id="@+id/etInputUsernameRegister"
             android:layout_width="337dp"
             android:layout_height="57dp"
-            android:hint="@string/username"
             android:background="@drawable/input"
+            android:hint="@string/username"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="68dp"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_bold"
             android:textSize="20sp"
             android:paddingStart="20dp"
             android:inputType="text"
             android:elevation="10dp"
-            tools:ignore="RtlSymmetry"
-            android:autofillHints="username" />
+            android:layout_marginTop="27dp"
+            android:autofillHints="username"
+            tools:ignore="RtlSymmetry" />
 
         <EditText
-            android:id="@+id/etInputPasswordLogin"
+            android:id="@+id/etInputEmailRegister"
             android:layout_width="337dp"
             android:layout_height="57dp"
-            android:hint="@string/password"
             android:background="@drawable/input"
+            android:hint="@string/email"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="35dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:inputType="textEmailAddress"
+            android:elevation="10dp"
+            android:layout_marginTop="9dp"
+            android:autofillHints="emailAddress"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/etInputPasswordRegister"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:background="@drawable/input"
+            android:hint="@string/password"
+            android:layout_gravity="center_horizontal"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_bold"
             android:textSize="20sp"
             android:paddingStart="20dp"
             android:inputType="textPassword"
             android:elevation="10dp"
+            android:layout_marginTop="9dp"
             android:autofillHints="password"
             tools:ignore="RtlSymmetry" />
-        
-        <TextView
-            android:id="@+id/tvForgotPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/forgot_password"
-            android:layout_marginTop="17dp"
-            android:textSize="15sp"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/black"
-            android:gravity="right"
-            android:paddingEnd="33dp"
-            tools:ignore="RtlHardcoded,RtlSymmetry" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogin"
+        <EditText
+            android:id="@+id/etInputConfirmPasswordRegister"
             android:layout_width="337dp"
             android:layout_height="57dp"
-            android:text="@string/login"
+            android:background="@drawable/input"
+            android:hint="@string/confirm_password"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:inputType="textPassword"
+            android:elevation="10dp"
+            android:layout_marginTop="9dp"
+            android:autofillHints="password"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:text="@string/register"
             android:textSize="20sp"
             android:paddingTop="10dp"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/button" />
 
         <TextView
-            android:id="@+id/tvDontHaveAccount"
+            android:id="@+id/tvAlreadyHaveAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/dont_have_account"
+            android:text="@string/already_have_an_account"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_bold"
             android:layout_marginTop="16dp"
             android:textSize="15sp"
             android:gravity="center_horizontal"/>
-
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/rlIconLogin"
+        android:id="@+id/rlIconRegister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_marginTop="18dp"
-        android:layout_below="@id/llFormInputLogin" >
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/llFormInputRegister" >
 
         <ImageView
             android:id="@+id/ivIconFacebookLogin"
