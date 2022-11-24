@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Home">
+    tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -66,6 +66,7 @@
             android:layout_below="@id/etInputSearch">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardMenuNusantara"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
@@ -76,6 +77,7 @@
                 tools:ignore="UnusedAttribute">
 
                 <LinearLayout
+                    android:id="@+id/llMenuNusantara"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -84,12 +86,14 @@
                     tools:ignore="UseCompoundDrawables">
 
                     <ImageView
+                        android:id="@+id/ivMenuNusantara"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:contentDescription="@string/nusantara"
                         android:src="@drawable/nusantara" />
 
                     <TextView
+                        android:id="@+id/tvMenuNusantara"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nusantara"
@@ -99,10 +103,10 @@
                         android:layout_marginBottom="12dp"/>
 
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardMenuInternasional"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
@@ -112,6 +116,7 @@
                 tools:ignore="UnusedAttribute">
 
                 <LinearLayout
+                    android:id="@+id/llMenuInternasional"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -120,12 +125,14 @@
                     tools:ignore="UseCompoundDrawables">
 
                     <ImageView
+                        android:id="@+id/ivMenuInternasional"
                         android:layout_width="750dp"
                         android:layout_height="75dp"
                         android:src="@drawable/internasional"
                         android:contentDescription="@string/internasional" />
 
                     <TextView
+                        android:id="@+id/tvMenuInternasional"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/internasional"
@@ -136,8 +143,8 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
         </GridLayout>
+
         <GridLayout
             android:id="@+id/gridBottom"
             android:layout_width="match_parent"
@@ -149,6 +156,7 @@
             android:layout_below="@id/gridTop">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardMenuDessert"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
@@ -159,6 +167,7 @@
                 tools:ignore="UnusedAttribute">
 
                 <LinearLayout
+                    android:id="@+id/llMenuDessert"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -167,25 +176,26 @@
                     tools:ignore="UseCompoundDrawables">
 
                     <ImageView
+                        android:id="@+id/ivMenuDessert"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:contentDescription="@string/dessert"
                         android:src="@drawable/desert" />
 
                     <TextView
+                        android:id="@+id/tvMenuDessert"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/dessert"
                         android:textColor="@color/black"
                         android:fontFamily="@font/poppins_bold"
                         android:textSize="15sp"
-                        android:layout_marginBottom="12dp"/>
-
+                        android:layout_marginBottom="12dp" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardMenuAppetizer"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
@@ -195,6 +205,7 @@
                 tools:ignore="UnusedAttribute">
 
                 <LinearLayout
+                    android:id="@+id/llMenuAppetizer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -203,12 +214,14 @@
                     tools:ignore="UseCompoundDrawables">
 
                     <ImageView
+                        android:id="@+id/ivMenuAppetizer"
                         android:layout_width="750dp"
                         android:layout_height="75dp"
                         android:src="@drawable/appetizer"
                         android:contentDescription="@string/appetizer" />
 
                     <TextView
+                        android:id="@+id/tvMenuAppetizer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/appetizer"
@@ -217,11 +230,8 @@
                         android:textSize="15sp"
                         android:layout_marginBottom="12dp"/>
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
-
         </GridLayout>
-
     </RelativeLayout>
 
 </FrameLayout>

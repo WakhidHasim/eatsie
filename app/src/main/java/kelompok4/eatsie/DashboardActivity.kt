@@ -13,13 +13,17 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(Home())
+        replaceFragment(HomeFragment())
+
+        binding.cardMenuNusantara.setOnClickListener {
+            replaceFragment(MenuNusantaraFragment())
+        }
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
-                R.id.itemMenuHome -> replaceFragment(Home())
-                R.id.itemMenuFavorites -> replaceFragment(Favorites())
-                R.id.itemMenuProfile -> replaceFragment(Profile())
+                R.id.itemMenuHome -> replaceFragment(HomeFragment())
+                R.id.itemMenuFavorites -> replaceFragment(FavoritesFragment())
+                R.id.itemMenuProfile -> replaceFragment(ProfileFragment())
 
                 else ->{
 

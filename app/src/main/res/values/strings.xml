@@ -43,4 +43,9 @@
     <string name="internasional">INTERNASIONAL</string>
     <string name="dessert">DESSERT</string>
     <string name="appetizer">APPETIZER</string>
+    <string name="menu_nusantara_title">Menu Nusantara</string>
+    <string name="rendang">Rendang</string>
+    <string name="pempek">Pempek</string>
+    <string name="soto_madura">Soto Madura</string>
+    
 </resources>
