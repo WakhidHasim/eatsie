@@ -33,4 +33,14 @@
     <string name="logout">LOGOUT</string>
     <string name="favorites_menu">Favorites Menu</string>
     <string name="sate_ayam">Sate Ayam</string>
+    <string name="image_card">Image Card</string>
+    <string name="open">OPEN</string>
+    <string name="favorite_icon">Favorite Icon</string>
+    <string name="icon_fragment_home">Icon Fragment Home</string>
+    <string name="hello">Hello, User</string>
+    <string name="search_any_recipe">Search Any Recipe ?</string>
+    <string name="nusantara">NUSANTARA</string>
+    <string name="internasional">INTERNASIONAL</string>
+    <string name="dessert">DESSERT</string>
+    <string name="appetizer">APPETIZER</string>
 </resources>

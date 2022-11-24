@@ -3,11 +3,225 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Home">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:id="@+id/rlFragmentHome"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:ignore="UselessParent">
+        
+        <ImageView
+            android:id="@+id/ivIconFragmentHome"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/icon_fragment_home" />
+        
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:layout_below="@id/ivIconFragmentHome"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="50dp" />
+        
+        <EditText
+            android:id="@+id/etInputSearch"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:layout_below="@id/tvHello"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/input"
+            android:layout_marginTop="13dp"
+            android:hint="@string/search_any_recipe"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18sp"
+            android:paddingStart="40dp"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:inputType="text"
+            tools:ignore="RtlSymmetry"
+            android:autofillHints="search" />
+
+        <GridLayout
+            android:id="@+id/gridTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/etInputSearch">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/input"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+                tools:ignore="UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/nusantara"
+                        android:src="@drawable/nusantara" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nusantara"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+                tools:ignore="UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="750dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/internasional"
+                        android:contentDescription="@string/internasional" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/internasional"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="12dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+        <GridLayout
+            android:id="@+id/gridBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:layout_below="@id/gridTop">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/input"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+                tools:ignore="UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:contentDescription="@string/dessert"
+                        android:src="@drawable/desert" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dessert"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="25dp"
+                tools:ignore="UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="750dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/appetizer"
+                        android:contentDescription="@string/appetizer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/appetizer"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="12dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </RelativeLayout>
 
 </FrameLayout>

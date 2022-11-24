@@ -10,7 +10,8 @@
         android:id="@+id/rlFragmentFavorites"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background" >
+        android:background="@color/background"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/tvFavoritesTitle"
@@ -29,9 +30,50 @@
             android:layout_height="105dp"
             android:text="@string/sate_ayam"
             android:background="@drawable/card"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:paddingTop="15dp"
+            android:paddingStart="120dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/tvFavoritesTitle"/>
+            android:layout_below="@id/tvFavoritesTitle"
+            tools:ignore="RtlSymmetry" />
+        
+        <ImageView
+            android:id="@+id/ivCardFavoritesCard"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/tvFavoritesTitle"
+            android:src="@drawable/sate"
+            android:layout_marginTop="38dp"
+            android:layout_marginStart="60dp"
+            android:contentDescription="@string/image_card"/>
 
+        <ImageView
+            android:id="@+id/ivIconFavorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/ic_favorite_border"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvFavoritesTitle"
+            android:contentDescription="@string/favorite_icon" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOpen"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:text="@string/open"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ivIconFavorite"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/button" />
     </RelativeLayout>
 
 </FrameLayout>
