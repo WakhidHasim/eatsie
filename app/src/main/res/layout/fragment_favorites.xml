@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favorites">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/rlFragmentFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" >
+
+        <TextView
+            android:id="@+id/tvFavoritesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favorites_menu"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" />
+        
+        <TextView
+            android:id="@+id/tvCardfavorites"
+            android:layout_width="327dp"
+            android:layout_height="105dp"
+            android:text="@string/sate_ayam"
+            android:background="@drawable/card"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvFavoritesTitle"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

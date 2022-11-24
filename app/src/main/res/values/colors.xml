@@ -5,4 +5,5 @@
     <color name="background">#FED330</color>
     <color name="orange">#FA8231</color>
     <color name="text">#7F8487</color>
+    <color name="inActiveBottomNavIconColor">#DCDCDC</color>
 </resources>

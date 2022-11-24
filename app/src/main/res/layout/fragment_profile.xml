@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/rlFragmentProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tvProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_title"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp" />
+
+        <ImageView
+            android:id="@+id/ivImageProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_profile"
+            android:layout_below="@id/tvProfileTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:contentDescription="@string/image_profile"/>
+
+        <TextView
+            android:id="@+id/tvUsernameProfile"
+            android:layout_width="312dp"
+            android:layout_height="148dp"
+            android:text="@string/profile_username"
+            android:background="@drawable/input"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15sp"
+            android:layout_below="@id/ivImageProfile"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="29dp"
+            android:paddingStart="46dp"
+            android:layout_marginTop="24dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tvEmailProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15sp"
+            android:layout_below="@id/ivImageProfile"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="80dp"
+            android:elevation="15dp"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            android:layout_width="337dp"
+            android:layout_height="57dp"
+            android:text="@string/logout"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/button"
+            android:layout_below="@id/tvUsernameProfile"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
