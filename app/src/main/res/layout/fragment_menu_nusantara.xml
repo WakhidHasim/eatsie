@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuNusantara">
+    tools:context=".MenuNusantaraFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -12,6 +12,20 @@
         android:layout_height="match_parent"
         android:background="@color/background"
         tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBack"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:text="@string/back"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button" />
 
         <TextView
             android:id="@+id/tvMenuNusantaraTitle"
@@ -22,7 +36,8 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/btnBack"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleView"

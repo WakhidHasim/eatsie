@@ -16,8 +16,8 @@ class AdapterRecyclerView(private val foodMenuList:ArrayList<DataMenuRecyclerVie
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = foodMenuList[position]
-        holder.ivFoodMenu.setImageResource(currentItem.ivFoodMenu)
-        holder.tvFoodMenu.text = currentItem.tvFoodMenu
+        holder.ivFoodMenu.setImageResource(currentItem.foodMenuImage)
+        holder.tvFoodMenu.text = currentItem.foodMenu
     }
 
     override fun getItemCount(): Int {

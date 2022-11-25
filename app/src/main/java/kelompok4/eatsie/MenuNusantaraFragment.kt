@@ -1,13 +1,14 @@
 package kelompok4.eatsie
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.fragment_menu_nusantara.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,8 +29,8 @@ class MenuNusantaraFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var foodArrayList: ArrayList<DataMenuRecyclerView>
 
-    lateinit var imageId : Array<Int>
-    lateinit var heading : Array<String>
+    lateinit var imageId: Array<Int>
+    lateinit var heading: Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,6 +70,14 @@ class MenuNusantaraFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        btnBack.setOnClickListener {
+            activity?.let{
+                val intent = Intent (it, DashboardActivity::class.java)
+                it.startActivity(intent)
+            }
+        }
+
         dataInitialize()
         val layoutManager = LinearLayoutManager(context)
         recyclerView = view.findViewById(R.id.recycleView)
@@ -78,7 +87,7 @@ class MenuNusantaraFragment : Fragment() {
         recyclerView.adapter = adapter
     }
 
-    private  fun dataInitialize(){
+    private fun dataInitialize() {
         foodArrayList = arrayListOf<DataMenuRecyclerView>()
 
         imageId = arrayOf(
@@ -95,8 +104,8 @@ class MenuNusantaraFragment : Fragment() {
             getString(R.string.pempek)
         )
 
-        for (i in imageId.indices){
-            val  foodMenu = DataMenuRecyclerView(imageId[i], heading[i])
+        for (i in imageId.indices) {
+            val foodMenu = DataMenuRecyclerView(imageId[i], heading[i])
             foodArrayList.add(foodMenu)
         }
     }

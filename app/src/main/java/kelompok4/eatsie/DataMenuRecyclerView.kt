@@ -1,3 +1,3 @@
 package kelompok4.eatsie
 
-class DataMenuRecyclerView(val ivFoodMenu: Int, val tvFoodMenu: String)
+class DataMenuRecyclerView(val foodMenuImage: Int, val foodMenu: String)

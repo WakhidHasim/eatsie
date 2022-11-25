@@ -109,11 +109,9 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/rlIconLogin"
+        android:id="@+id/rlIconRegister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="18dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/llFormInputLogin" >
 
         <ImageView
@@ -124,7 +122,8 @@
             android:contentDescription="@string/facebook"
             android:layout_alignParentStart="true"
             android:layout_marginStart="67dp"
-            android:layout_marginBottom="150dp"/>
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp" />
 
         <ImageView
             android:id="@+id/ivIconGoogleLogin"
@@ -133,7 +132,8 @@
             android:src="@drawable/google"
             android:contentDescription="@string/google"
             android:layout_marginStart="175dp"
-            android:layout_marginBottom="150dp"/>
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp" />
 
         <ImageView
             android:id="@+id/ivIconTwitterLogin"
@@ -143,7 +143,8 @@
             android:contentDescription="@string/twitter"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="67dp"
-            android:layout_marginBottom="150dp"/>
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp" />
     </RelativeLayout>
 
 </RelativeLayout>

@@ -15,10 +15,6 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(HomeFragment())
 
-        binding.cardMenuNusantara.setOnClickListener {
-            replaceFragment(MenuNusantaraFragment())
-        }
-
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.itemMenuHome -> replaceFragment(HomeFragment())
@@ -37,7 +33,7 @@ class DashboardActivity : AppCompatActivity() {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
 
-        fragmentTransaction.replace(R.id.frameLayoutContainer, fragment)
+        fragmentTransaction.replace(R.id.container, fragment)
         fragmentTransaction.commit()
     }
 }
