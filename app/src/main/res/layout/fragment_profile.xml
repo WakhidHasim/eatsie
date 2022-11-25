@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -34,20 +35,27 @@
             android:layout_marginTop="22dp"
             android:contentDescription="@string/image_profile"/>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProfile"
+            android:layout_width="312dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/ivImageProfile"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="20dp" />
+
         <TextView
             android:id="@+id/tvUsernameProfile"
-            android:layout_width="312dp"
-            android:layout_height="148dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/profile_username"
-            android:background="@drawable/input"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_bold"
             android:textSize="15sp"
             android:layout_below="@id/ivImageProfile"
-            android:layout_centerHorizontal="true"
-            android:paddingTop="29dp"
-            android:paddingStart="46dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="50dp"
+            android:elevation="15dp"
             tools:ignore="RtlSymmetry" />
 
         <TextView
@@ -58,9 +66,9 @@
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_bold"
             android:textSize="15sp"
-            android:layout_below="@id/ivImageProfile"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="80dp"
+            android:layout_below="@id/tvUsernameProfile"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="10dp"
             android:elevation="15dp"
             tools:ignore="RtlSymmetry" />
 
@@ -75,7 +83,7 @@
             android:fontFamily="@font/poppins_bold"
             android:layout_marginTop="57dp"
             android:background="@drawable/button"
-            android:layout_below="@id/tvUsernameProfile"
+            android:layout_below="@+id/cardProfile"
             android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
